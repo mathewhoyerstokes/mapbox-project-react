@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import mapboxgl from 'mapbox-gl/dist/mapbox-gl-csp';
-import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker'; // Load worker code separately with worker-loader
-
-mapboxgl.workerClass = MapboxWorker; // Wire up loaded worker to be used instead of the default
 
 class Map extends Component {
   componentDidMount() {
